@@ -1,0 +1,113 @@
+\documentclass[10pt,letterpaper,ragged2e]{altacv}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=11cm,marginparwidth=8.5cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Andrew Gerstenslager}
+\tagline{MS Computer Science Student | Data Science \& Robotics Engineer}
+\personalinfo{%
+	\phone{+1 (330)-696-3493}
+	\homepage{andrewgerstenslager.com}
+	\email{andrewgerstenslager@gmail.com}
+	\linkedin{linkedin.com/in/andrew-gerstenslager}
+	\github{github.com/AndrewGerstenslager}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+	\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[resume_right_robotics]{Education}
+\cvevent{University of Cincinnati}{Master of Science - Computer Science}{Expected May 2025}{Cincinnati, OH}
+\begin{itemize}
+	\item GPA: 3.88
+\end{itemize}
+
+\divider
+
+\cvevent{University of Cincinnati}{Bachelor of Science - Computer Engineering}{May 2024}{Cincinnati, OH}
+\begin{itemize}
+	\item GPA: 3.71 \hspace{1em}|\hspace{1em} Minor: Finance
+\end{itemize}
+
+\cvsection{Experience}
+
+\cvevent{\textbf{Data Science \& Engineering Co-Op}}{84.51°}{August 2022 -- August 2023}{Cincinnati, OH}
+\begin{itemize}
+	\item \textbf{Data Science Co-Op (May 2023 -- August 2023):}
+	      \begin{itemize}
+		      \item Implemented a LSTM-based anomaly detection Python package using TensorFlow autoencoders.
+		      \item Designed and optimized the package flow for seamless integration, while reducing GPU runtime training costs by over 80\%.
+		      \item Led product owner meetings to demonstrate anomaly detection use cases for data analysis.
+	      \end{itemize}
+	\item \textbf{Data Engineering Co-Op (August 2022 -- December 2022):}
+	      \begin{itemize}
+		      \item Contributed to internal Python tools for household matching package, focusing on privacy compliance.
+		      \item Rewrote internal API from Flask to FastAPI, enhancing performance and aligning with company standards.
+		      \item Developed client-facing Angular features and updated Terraform configurations to update dependencies.
+	      \end{itemize}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Computer Engineering Co-Op}}{L3Harris Technologies}{May 2020 -- May 2022}{Cincinnati, OH}
+\begin{itemize}
+	\begin{itemize}
+		\item Completed 4 semester-long rotations working on the test equipment team developing C\# .NET applications for circuit board testers.
+		\item Devised machine learning system for manufacturing failure prediction for environmental stress tests using Scikit-learn.
+		\item Migrated team's main version control from SVN to Git.
+		\item Documented test equipment hardware and software using 3D models, BOMs, and Doxygen.
+	\end{itemize}
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{President - UC Robotics Team}}{}{August 2020 -- August 2022}{Cincinnati, OH}
+\begin{itemize}
+	\item Led a team of 20 members in designing and building autonomous robots for the Intelligent Ground Vehicle Competition (IGVC).
+	\item Upgraded the robot's software from ROS1 to ROS2, enhancing performance and reliability.
+	      %%\item Developed image processing pipelines using OpenCV for real-time object detection and navigation.
+	      %%\item Rebuilt network architecture for remote access and field connectivity, improving operational efficiency.
+	\item Managed project timelines, coordinated team efforts, and introduced agile methodologies to track progress.
+	\item Currently a graduate student advisor for the team
+\end{itemize}
+
+\clearpage
+\end{document}
