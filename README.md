@@ -1,6 +1,6 @@
 # Professional LaTeX Resume
 
-A clean, modern resume template using the AltaCV class, customized for robotics and software engineering professionals.
+A clean, modern resume template using the AltaCV class, customized for my skillsets. I created this in order to version control my resume over time as an easier way to track versions.
 
 ## Features
 
