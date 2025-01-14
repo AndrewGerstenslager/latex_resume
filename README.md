@@ -30,39 +30,11 @@ To compile this resume, you'll need:
 git clone https://github.com/AndrewGerstenslager/latex_resume.git
 ```
 
-2. Edit the resume content in `resume.tex`
+2. Edit the resume content in `resume_main.tex`
 
 3. Compile using:
 ```bash
-pdflatex resume.tex
-```
-
-## Customization
-
-### Colors
-You can modify the colors by adjusting the following in the preamble:
-```latex
-\definecolor{VividPurple}{HTML}{000000}
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{2E2E2E}
-```
-
-### Sections
-The resume is organized into sections using:
-```latex
-\cvsection{Section Name}
-```
-
-### Contact Info
-Update your personal information in:
-```latex
-\personalinfo{%
-    \phone{your-phone}
-    \homepage{your-website}
-    \email{your-email}
-    \linkedin{your-linkedin}
-    \github{your-github}
-}
+pdflatex resume_main.tex
 ```
 
 ## License
